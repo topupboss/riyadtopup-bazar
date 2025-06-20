@@ -3,65 +3,58 @@
 <html lang="bn">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>রিয়াদ টপ আপ বাজার</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            padding: 20px;
-            text-align: center;
-        }
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: 80%;
-        }
-        th, td {
-            padding: 12px;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #ffcc00;
-        }
-        h1 {
-            color: #0066cc;
-        }
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            margin-top: 20px;
-            border-radius: 5px;
-        }
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { color: #444; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        select, input[type="text"] { width: 100%; padding: 10px; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background: #0056b3; }
     </style>
 </head>
 <body>
-    <h1>রিয়াদ টপ আপ বাজার</h1>
-    <p>Free Fire UID দিন এবং ডায়মন্ড প্যাকেজ সিলেক্ট করে অর্ডার দিন।</p>
-    <table>
-        <tr><th>প্যাকেজ</th><th>দাম (৳)</th></tr>
-        <tr><td>25 ডায়মন্ড</td><td>২৩</td></tr>
-        <tr><td>50 ডায়মন্ড</td><td>৩৫</td></tr>
-        <tr><td>100 ডায়মন্ড</td><td>৭০</td></tr>
-        <tr><td>200 ডায়মন্ড</td><td>১৫০</td></tr>
-        <tr><td>300 ডায়মন্ড</td><td>২১০</td></tr>
-        <tr><td>800 ডায়মন্ড</td><td>৫৮০</td></tr>
-        <tr><td>1200 ডায়মন্ড</td><td>৮০০</td></tr>
-        <tr><td>1500 ডায়মন্ড</td><td>১১১০</td></tr>
-        <tr><td>2000 ডায়মন্ড</td><td>১৪৫০</td></tr>
-        <tr><td>2500 ডায়মন্ড</td><td>১৮২০</td></tr>
-        <tr><td>3000 ডায়মন্ড</td><td>২১০০</td></tr>
-        <tr><td>4000 ডায়মন্ড</td><td>২৪৫০</td></tr>
-        <tr><td>5000 ডায়মন্ড</td><td>২৯৭০</td></tr>
-        <tr><td>Weekly Membership</td><td>১৫৪</td></tr>
-        <tr><td>Monthly Membership</td><td>৬৭০</td></tr>
-        <tr><td>Level Up Pass</td><td>১৬০</td></tr>
-        <tr><td>Weekly Lite</td><td>৪৩</td></tr>
-    </table>
-    <a href="https://wa.me/8801324639145" class="button">WhatsApp-এ যোগাযোগ করুন</a>
+    <div class="container">
+        <h2>রিয়াদ টপ আপ বাজার</h2>
+        <form>
+            <label for="uid">Free Fire UID দিন:</label>
+            <input type="text" id="uid" name="uid" placeholder="আপনার UID লিখুন" required>
+
+            <label for="diamonds">ডায়মন্ড প্যাকেজ নির্বাচন করুন:</label>
+            <select id="diamonds" name="diamonds" required>
+                <option value="">প্যাকেজ নির্বাচন করুন</option>
+                <option>25 ডায়মন্ড – 23৳</option>
+                <option>50 ডায়মন্ড – 35৳</option>
+                <option>100 ডায়মন্ড – 70৳</option>
+                <option>200 ডায়মন্ড – 150৳</option>
+                <option>300 ডায়মন্ড – 210৳</option>
+                <option>800 ডায়মন্ড – 580৳</option>
+                <option>1200 ডায়মন্ড – 800৳</option>
+                <option>1500 ডায়মন্ড – 1110৳</option>
+                <option>2000 ডায়মন্ড – 1450৳</option>
+                <option>2500 ডায়মন্ড – 1820৳</option>
+                <option>3000 ডায়মন্ড – 2100৳</option>
+                <option>4000 ডায়মন্ড – 2450৳</option>
+                <option>5000 ডায়মন্ড – 2970৳</option>
+                <option>Weekly Membership – 154৳</option>
+                <option>Monthly Membership – 670৳</option>
+                <option>Level Up Pass – 160৳</option>
+                <option>Weekly Lite – 43৳</option>
+            </select>
+
+            <label for="payment">পেমেন্ট মেথড নির্বাচন করুন:</label>
+            <select id="payment" name="payment" required>
+                <option value="">মেথড নির্বাচন করুন</option>
+                <option>bKash - 01951326331</option>
+                <option>Nagad - 01324639145</option>
+            </select>
+
+            <label for="trxid">লেনদেন নম্বর (TRX ID):</label>
+            <input type="text" id="trxid" name="trxid" placeholder="TRX ID দিন" required>
+
+            <button type="submit">Buy Now</button>
+        </form>
+    </div>
 </body>
 </html>
