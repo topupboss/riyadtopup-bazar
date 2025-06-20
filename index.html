@@ -6,28 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>রিয়াদ টপ আপ বাজার</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #ff4747;
-        }
-        a {
-            color: #0f0;
-            text-decoration: none;
-            display: block;
-            margin-top: 20px;
-        }
+        body { font-family: 'Arial', sans-serif; background: #f9f9f9; padding: 20px; }
+        .container { max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #e74c3c; }
+        label { display: block; margin-top: 15px; }
+        input, select { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
+        button { margin-top: 20px; background: #e74c3c; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+        .footer { margin-top: 30px; font-size: 14px; color: #777; }
     </style>
 </head>
 <body>
-    <h1>রিয়াদ টপ আপ বাজার</h1>
-    <p>Free Fire UID দিন এবং ডায়মন্ড প্যাকেজ সিলেক্ট করে অর্ডার দিন।</p>
-    <p>এই সাইট Putibazar স্টাইলে বানানো হয়েছে।</p>
-    <a href="https://wa.me/8801324639145">WhatsApp-এ যোগাযোগ করুন</a>
+    <div class="container">
+        <h1>রিয়াদ টপ আপ বাজার</h1>
+        <form>
+            <label for="uid">Free Fire UID দিন:</label>
+            <input type="text" id="uid" name="uid" placeholder="Free Fire UID লিখুন" required>
+
+            <label for="diamond">ডায়মন্ড প্যাকেজ সিলেক্ট করুন:</label>
+            <select id="diamond" name="diamond">
+                <option value="24">24 ডায়মন্ড – 30৳</option>
+                <option value="50">50 ডায়মন্ড – 55৳</option>
+                <option value="100">100 ডায়মন্ড – 100৳</option>
+                <option value="200">200 ডায়মন্ড – 190৳</option>
+                <option value="300">300 ডায়মন্ড – 270৳</option>
+                <option value="800">800 ডায়মন্ড – 720৳</option>
+                <option value="1200">1200 ডায়মন্ড – 1100৳</option>
+                <option value="1500">1500 ডায়মন্ড – 1380৳</option>
+                <option value="2000">2000 ডায়মন্ড – 1850৳</option>
+                <option value="2500">2500 ডায়মন্ড – 2300৳</option>
+                <option value="3000">3000 ডায়মন্ড – 2750৳</option>
+                <option value="4000">4000 ডায়মন্ড – 3600৳</option>
+                <option value="5000">5000 ডায়মন্ড – 4500৳</option>
+                <option value="weekly">Weekly Membership – 170৳</option>
+                <option value="monthly">Monthly Membership – 530৳</option>
+                <option value="levelup">Level Up Pass – 200৳</option>
+                <option value="weeklylite">Weekly Lite – 130৳</option>
+            </select>
+
+            <label for="payment">পেমেন্ট অপশন:</label>
+            <select id="payment" name="payment">
+                <option value="bkash">bKash (01951326331)</option>
+                <option value="nagad">Nagad (01324639145)</option>
+            </select>
+
+            <button type="submit">Buy Now</button>
+        </form>
+        <div class="footer">
+            যোগাযোগ করুনঃ <a href="https://wa.me/8801324639145">WhatsApp</a> |
+            <a href="https://www.facebook.com/share/18t2N7GiXb/">Facebook</a><br>
+            © 2025 Riyad Topup Bazar
+        </div>
+    </div>
 </body>
 </html>
